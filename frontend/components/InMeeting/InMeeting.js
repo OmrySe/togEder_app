@@ -101,7 +101,7 @@ function InMeeting() {
                 </h1>
             </header>
 
-            <h3>Meeting Transcript</h3>
+            <h3>Transcript</h3>
             <Transcript transcript={transcript} />
 
             <div className="InMeeting-record">
