@@ -1,0 +1,43 @@
+.InMeeting {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1rem;
+}
+
+.InMeeting h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #333;
+}
+.InMeeting header h1 .purple-text-bold {
+    color: #8a2be2;
+    font-weight: bold;
+}
+
+.InMeeting-record {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.InMeeting button {
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    border: 1px solid #4192a8;
+    border-radius: 0.25rem;
+    background-color: #4192a8;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+    width: 100%;
+}
+
+.InMeeting button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
