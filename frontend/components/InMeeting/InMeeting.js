@@ -95,9 +95,9 @@ function InMeeting() {
         <div className="InMeeting">
             <header>
             <h1>
-                    <span>tog</span>
+                    <span> tog</span>
                     <span className="purple-text-bold">ED</span>
-                    <span>er</span>
+                    <span>er </span>
                 </h1>
             </header>
 
