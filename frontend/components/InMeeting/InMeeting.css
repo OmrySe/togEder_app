@@ -9,8 +9,14 @@
 
 .InMeeting h1 {
     text-align: center;
-    font-size: 1.5rem;
+    margin: 0;
+    font-size: 2rem;
     font-weight: 300;
+    color: #333;
+}
+.InMeeting header h1 .purple-text-bold {
+    color: #8a2be2;
+    font-weight: bold;
 }
 
 .InMeeting-record {
