@@ -60,12 +60,18 @@ router.post('/start-recording', session, async (req, res, next) => {
                 bot_name: `${process.env.BOT_NAME} Notetaker`,
                 meeting_url: req.body.meetingUrl,
                 transcription_options: {
-                    provider: 'default',
+                    provider: "gladia",
+                    "detect_language": false,
+                    "language": "he",
                 },
                 real_time_transcription: {
                     destination_url: `${zoomApp.publicUrl}/webhook/transcription?secret=${zoomApp.webhookSecret}`,
                     partial_results: true,
                 },
+                real_time_media: {
+                    webhook_call_events_destination_url: `${zoomApp.publicUrl}/webhook/events?secret=${zoomApp.webhookSecret}`,
+                    webhook_chat_messages_destination_url: `${zoomApp.publicUrl}/webhook/chat?secret=${zoomApp.webhookSecret}`
+                  },
                 zoom: {
                     request_recording_permission_on_host_join: true,
                     require_recording_permission: true,
@@ -88,14 +94,14 @@ router.post('/start-recording', session, async (req, res, next) => {
                     }
                 },
                 */
-                /* Uncomment this to make the bot send a chat message.
+                /* Uncomment this to make the bot send a chat message.*/
                 chat: {
                     on_bot_join: {
                       send_to: 'everyone',
-                      message: 'Hello world'
+                      message: 'togEDer is an AI-based co-facilitator to this breakout room. It provides AI-generated breakout room summaries and real-time analytics to your host to help you make your group meeting more effective and efficient. View our Privacy Policy at https://www.ltogeder.com/pp. Type "Private" to pause recording for 30 seconds.'
                     }
                 },
-                */
+                
             }),
         });
 
