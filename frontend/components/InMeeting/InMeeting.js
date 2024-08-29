@@ -94,11 +94,7 @@ function InMeeting() {
     return (
         <div className="InMeeting">
             <header>
-            <h1>
-                    <span>tog</span>
-                    <span className="purple-text-bold">ED</span>
-                    <span>er</span>
-                </h1>
+                <h1>Your Notetaker</h1>
             </header>
 
             <h3>Meeting Transcript</h3>
