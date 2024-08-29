@@ -60,13 +60,11 @@ router.post('/start-recording', session, async (req, res, next) => {
                 bot_name: `${process.env.BOT_NAME} Notetaker`,
                 meeting_url: req.body.meetingUrl,
                 transcription_options: {
-                    provider: "gladia",
-                    "detect_language": false,
-                    "language": "he",
+                    provider: 'default',
                 },
                 real_time_transcription: {
                     destination_url: `${zoomApp.publicUrl}/webhook/transcription?secret=${zoomApp.webhookSecret}`,
-                    partial_results: false,
+                    partial_results: true,
                 },
                 zoom: {
                     request_recording_permission_on_host_join: true,

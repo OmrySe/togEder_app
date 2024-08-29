@@ -39,7 +39,7 @@ export const appName = process.env.APP_NAME || 'zoom-app';
 export const redirectUri = zoomApp.redirectUrl;
 
 // HTTP
-export const port = process.env.PORT || '3000' ;
+export const port = process.env.PORT || '3000';
 
 // require secrets are explicitly imported
 export default {
