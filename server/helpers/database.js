@@ -5,6 +5,8 @@ const db = {
     transcripts: {
         // [bot id]: [transcript]
     },
+    chat: {},  
+  //  events: {},
 };
 
 export default db;
