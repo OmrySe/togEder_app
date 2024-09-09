@@ -2,11 +2,10 @@
 // switch this out for a real database in production
 
 const db = {
-    transcripts: {
-        // [bot id]: [transcript]
-    },
-    chat: {},  
-  //  events: {},
+    transcripts: {},
+    participants: {},
+    talkTime: {},
+    chat: {},
 };
 
 export default db;
